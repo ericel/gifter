@@ -10,5 +10,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+ 
+  addItem(){
+    console.log('coming');
+  }
 }
