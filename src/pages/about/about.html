@@ -5,15 +5,18 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+
+  <ion-navbar color="header">
+     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>About</ion-title>
+    <ion-title>About</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="addItem()"><ion-icon name="add-circle"></ion-icon></button>
+      <button ion-button icon-only (click)="addItem()"><ion-icon ios="ios-settings" md="md-settings"></ion-icon></button>
     </ion-buttons>
+    
   </ion-navbar>
+  
 </ion-header>
 
 
