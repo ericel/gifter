@@ -23,7 +23,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {}, {
+     links: [
+        { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
+        { component: ListPage, name: 'List'},
+     ]
+      })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
